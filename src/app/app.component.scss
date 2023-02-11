@@ -1,0 +1,105 @@
+$color-gray: #929292;
+$color-blue: #4476FF;
+$bg-disabled: #F2F2F2;
+$border-disabled: #cccccc;
+
+input {
+  padding: 1rem 0.8rem;
+  border-radius: 10px;
+  border: 1.5px solid $color-gray;
+  outline: none;
+
+  &:hover {
+    border: 1.5px solid black;
+  }
+
+  &:focus {
+    border: 2px solid $color-blue;
+  }
+}
+
+.input-hover {
+  border: 1.5px solid black;
+
+  &:focus { border: 1.5px solid black; }
+}
+
+.input-focus {
+  border: 2px solid $color-blue;
+
+  &:hover {border: 2px solid $color-blue;}
+}
+
+input[error] {
+  border: 1.5px solid red;
+
+  &:hover { border: 1.5px solid black; }
+}
+
+.input-error-hover {
+  border: 1.5px solid black;
+
+  &:focus {
+    border: 1.5px solid black;
+  }
+}
+
+.input-error-focus {
+  border: 1.5px solid red;
+
+  &:hover, &:focus {
+    border: 1.5px solid red;
+  }
+}
+
+input:disabled {
+  background-color: $bg-disabled;
+  border: 1px solid $border-disabled;
+}
+
+.startIcon {
+  border: 1px solid $color-gray;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  color: $color-gray;
+  padding-left: 1rem;
+}
+
+.startIcon input{
+  border: none
+}
+
+.endIcon {
+  border: 1px solid $color-gray;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  color: $color-gray;
+  padding-right: 0.5rem;
+}
+
+.endIcon input{
+  border: none
+}
+
+.size-sm {
+  padding: 0.5rem 0.8rem;
+}
+
+.fullWidth {
+  width: 100%
+}
+
+.multiline {
+  height: 10rem;
+  white-space: pre-wrap !important;
+  word-wrap: break-word !important;
+  width: fit-content;
+  overflow-x: auto;
+}
+
+.row-4 {
+  width: 25%;
+}

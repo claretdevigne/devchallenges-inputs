@@ -1,6 +1,11 @@
 {
   "name": "inputs",
-  "version": "0.0.0",
+  "version": "1.0.0",
+  "author": {
+    "name": "Claret Devigne",
+    "email": "claretdevigne@gmail.com",
+    "url": "https://claretdevigne.netlify.app"
+  },
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
